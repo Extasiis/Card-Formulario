@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <form action="" method="post" id="card-form" class="card">
+        <!--  Card Rigth -->
+        <div class="card__rigth">
+          <!-- Input Email -->
+          <div class="relative">
+            <input type="email" id="email" name="email" class="card__email" />
+            <label for="email" class="card__email-text">Email</label>
+          </div>
+
+          <!-- Input Asunto -->
+          <div class="relative">
+            <input
+              type="asunto"
+              id="asunto"
+              name="asunto"
+              class="card__asunto"
+            />
+            <label for="asunto" class="card__asunto-text">Asunto</label>
+          </div>
+
+          <!-- Input mensaje -->
+          <div class="relative">
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              class="card__mensaje"
+            ></textarea>
+            <label for="mensaje" class="card__mensaje-text">Mensaje</label>
+          </div>
+        </div>
+        <!-- Card left -->
+        <div class="card__left">
+          <div class="card__left-header">
+            <img
+              src="img/ico-mensaje.svg"
+              width="150px"
+              class="card__left-header-ico"
+            />
+            <h1 class="card__left-title">Envia Nuevo Mail</h1>
+          </div>
+          <div class="card__left-body">
+            <ul class="card__lista">
+              <li class="lista__title">Contacto</li>
+              <li class="lista__author">David Marquez</li>
+              <li class="lista__profesion">Developer Frontend y Desing UI</li>
+            </ul>
+            <div class="card__left-radius">
+              <button
+                type="submit"
+                id="enviar-email"
+                value=""
+                class="card__left-ico"
+              >
+                <div class="sk-chase">
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
